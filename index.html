@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="NightOwl.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="NightOwl.js" defer></script>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <img src="pictures/download.png" alt="IMDB logo">
+    </div>
+    <div class="searchMovie">
+        <input id="searchIMDB" placeholder="Search IMDB">
+        <button type="submit" id="search"> search
+<!--            <img alt="magnify" src="pictures/icons8-search-50.png"></img>-->
+        </button>
+    </div>
+
+    <div class="apiKey">
+        <input id="apiKey" placeholder="API KEY">
+    </div>
+
+<!--    <div class="logo"> kjjdsnkjsnfjksd</div>-->
+<!--    <img src="pictures/download.png" alt="IMDB logo" width="150px" height="50px">-->
+
+
+</div>
+
+<div class="mainCard">
+    <div class="image-box">
+        <img src="" alt="Movie Poster" width="100%" id="movieImage">
+    </div>
+
+    <div class="description-box">
+        <div class="topRowInDescription">
+            <div class="title-box">
+                <h1 id="movieName"></h1>
+                <ul class="time">
+                    <li id="movieYear" class="time-list"></li>
+                    <li id="movieDuration" class="time-list"></li>
+                </ul>
+            </div>
+            <div class="star-box">
+                <img src="pictures/star-no-background.jpg"
+                     alt="Star" style="width:85px;height:85px;">
+<!--                <div id="movieRating">8.7</div>-->
+            </div>
+        </div>
+        <div class="genre-list">
+            <div class="genreItem">Adventure</div>
+        </div>
+        <div class="summery" id="moviePlot"></div>
+
+        <div class="peopleDescription">
+            <hr class="topLine">
+            <div class="peopleBox">
+                <span class="peopleTitle" id="directorTitle">Director</span>
+                <span id="movieDirector"></span>
+            </div>
+            <hr class="bottomLine">
+            <div class="peopleBox">
+                <span class="peopleTitle" id="writerTitle">Writer</span>
+                <span id="movieWriter"></span>
+            </div>
+            <hr class="bottomLine">
+            <div class="peopleBox">
+                <span class="peopleTitle">Stars</span>
+                <span id="movieStars"></span>
+            </div>
+            <hr class="bottomLine">
+        </div>
+    </div>
+</div>
+
+<div class="similarMoviesCard">
+
+</div>
+
+
+
+</body>
+</html>
