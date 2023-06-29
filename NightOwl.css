@@ -1,0 +1,228 @@
+body {
+    /*for background picture*/
+    background-image: url("pictures/329605-edited2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+* {
+    /*set font and relative futures*/
+    font-family: sans-serif, Garamond;
+    text-align: left;
+    color: lightgray;
+}
+
+.mainCard {
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    /*set display as grid */
+    display: flex;
+    /*grid-template-areas: 'gridImageArea gridDescriptionArea';*/
+
+
+    /*set the vertical position of box*/
+    position: relative;
+    top: 130px;
+
+    /*set padding and margin and size*/
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-box {
+    /*grid-area: gridImageArea;*/
+    width: 30%;
+    /*width: calc(22.75% - 0.125rem);*/
+    /*position: static;*/
+}
+
+.description-box {
+    /*grid-area: gridDescriptionArea;*/
+    /*background-color: brown;*/
+    width: 70%;
+}
+
+.topRowInDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#movieName {
+    padding-left: 30px;
+    margin-bottom: 5px;
+
+    color: rgb(245, 197, 24);
+}
+
+.time {
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.time-list {
+    display: inline-block;
+}
+
+#movieDuration::before {
+    display: inline-block;
+    margin: 0 .5rem .2rem;
+    content: "";
+    font-size: 1rem;
+    line-height: .5rem;
+    padding: 1px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: currentColor;
+}
+
+.star-box {
+    padding-right: 30px;
+}
+
+#movieRating {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8px;
+    background-color: blueviolet;
+}
+
+.genre-list {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+.genreItem {
+    padding: 5px;
+    display: inline;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+
+
+.summery {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.peopleDescription {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.peopleBox {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.peopleTitle {
+    font-weight: bolder;
+    color: white;
+    padding-right: 10px;
+}
+
+.topLine {
+    border: 1px solid gray;
+}
+
+.bottomLine {
+    border: 1px solid darkgray;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+
+
+}
+
+.logo {
+    display: inline-block;
+    margin: 10px 5px 5px 15px;
+    width: 128px;
+    height: 56px;
+}
+
+.logo img {
+    border-radius: 8%;
+    width: 100px;
+    height: auto;
+}
+
+.searchMovie {
+    display: inline-block;
+    margin: 25px;
+}
+
+#searchIMDB {
+    top: 0;
+    width: 400px;
+    height: 20px;
+}
+
+.apiKey {
+    display: inline-block;
+    margin: 30px 60px 25px auto;
+}
+
+
+/*This block is used to set the detail of text area*/
+.text {
+    /*set that text box be in the center with background and its width*/
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /*set the vertical position of text box*/
+    position: relative;
+    top: 35%;
+
+    /*set border*/
+    border-style: solid;
+    border-color: darkred;
+    border-radius: 30px;
+
+    /*set padding*/
+    padding: 5px 25px 25px;
+
+    /*set font and relative futures*/
+    font-family: sans-serif, Garamond;
+    text-align: left;
+    color: silver;
+
+    /*set display as grid */
+    display: grid;
+    grid-template-columns: auto auto;
+
+
+}
+
+/*specifies of headers color*/
+h2 {
+    color: goldenrod;
+}
+
+/*the style of buttons*/
+button {
+    background: none;
+    border: none;
+    color: silver;
+    font-family: sans-serif, Garamond;
+    font-size: larger;
+}
