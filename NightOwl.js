@@ -11,11 +11,9 @@ const element = document.getElementById("search");
 element.addEventListener("click", searchMovie);
 
 function searchMovie() {
-    // let apiKey = document.getElementById('apiKey').value;
+    let apiKey = document.getElementById('apiKey').value;
     let movieName = document.getElementById('searchIMDB').value;
-    let apiKey = 'k_dic4z88a';
     verifyApiKey(apiKey);
-    // let movieName = 'interstellar';
     let searchMovieUrl = 'https://imdb-api.com/en/API/SearchMovie/' + apiKey + '/' + movieName;
     let titleUrl = 'https://imdb-api.com/en/API/Title/' + apiKey + '/';
     getMovie(searchMovieUrl, titleUrl);
